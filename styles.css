@@ -1,11 +1,15 @@
-/*////////////////////Body//////////////////////*/
+/*////////////////General Properties//////////////*/
 body {
   margin: 0px;
   background-color: #F5F5F5;
 }
-h1, h2, h3{
+h1, h2, h3, time{
   color: #FFF;
   font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+  padding: 0px;
+  margin: 0px;
 }
 p, ul {
   color: #1D203D;
@@ -17,19 +21,19 @@ ul {
 }
 /*////////////////////Header//////////////////////*/
 header {
-  margin: 0px;
+  padding: 20px 20px 30px 20px;
   height: 50px;
   background-color: #FFF;
+  text-align: center;
 }
 header img {
-  max-width: 50px;
-  margin-left: 10%;
-  padding: 50px;
-  background-color: #1D203D;
+  background-color: black;
+  max-width: 40px;
+  filter: invert(100%);
 }
 /*////////////////////Main//////////////////////*/
 main {
-  margin: 150px 10% 2% 10%;
+  margin: 2% 10% 2% 10%;
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -37,8 +41,8 @@ main {
 /*////////////////////BIO//////////////////////*/
 #bio {
   display: flex;
-  padding: 30px;
   flex-direction: column;
+  padding: 0px 30px 30px 30px;
   background-color: #888;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -46,26 +50,22 @@ main {
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
   background-image: linear-gradient(to bottom right, #993737, #FFD766);
-  margin: 40px 20px 0px 0px;
 }
 #bio img {
   max-width: 150px;
   display: block;
-  margin: -70px 30px 10px 28px;
-  text-align: center;
-}
-#bio-header {
-  display: flex;
-  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  border-radius: 0% 0% 50% 50%;
 }
 #bio-title {
   display: flex;
   justify-content: space-between;
+  padding: 0px;
 }
 time {
   text-align: right;
-}
-#dev-list {
 }
 /*////////////////////Tech List//////////////////////*/
 #techAndInterest {
@@ -81,7 +81,6 @@ time {
 #tech {
   display: flex;
   justify-content: space-between;
-  justify-content: space-evenly;
 }
 #tech img {
   max-width: 180px;
@@ -89,31 +88,31 @@ time {
 }
 figure {
   display: flex;
-  flex: space-around;
-  margin: 0px 0px 30px 0px;
-  display: flex;
   flex-direction: column;
   max-width: 180px;
   max-height: 180px;
-  padding: 0px 20px 10px 0px;
+  margin: 0px;
+  padding: 0px 20px 20px 0px;
 }
 figcaption {
   padding: 5px; 
   color: #FFF;
   background: rgba(000,000,000,0.5);
   position: relative;
-  bottom: 18px;
-  font-size: 10px;
+  bottom: 59px;
+  text-align: center;
+  font-size: 14px;
 }
 figcaption p {
   color: #FFF;
 }
 /*////////////////////Footer//////////////////////*/
 footer {
-  color: #111;
   text-align: center;
   padding: 1% 10%;
-  background-color: #FFF;
+}
+footer p {
+  color: #999;
 }
 /*///////////////////Fade-In Animations/////////*/
   @keyframes fadein {
@@ -144,12 +143,12 @@ footer {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
+/*///////////////////Mobile////////////////////*/
 @media only screen and (max-width:1000px) {
   /* For mobile phones: */
   main {
     flex-direction: column;
-    margin: 150px 10% 2% 10%;
+    margin: 2% 10% 2% 10%;
   }
   header {
     text-align: center;
