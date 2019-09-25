@@ -84,7 +84,7 @@ time {
 }
 #tech {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 #tech img {
