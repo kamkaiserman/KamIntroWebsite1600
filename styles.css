@@ -9,10 +9,10 @@ h1, h2, h3, time{
 }
 h1 {
   padding: 0px;
+  padding-right: 10px;
   margin: 0px;
 }
 p, ul {
-  color: #1D203D;
   font-family: 'Poppins', sans-serif;
 }
 ul {
@@ -27,29 +27,31 @@ header {
   text-align: center;
 }
 header img {
-  background-color: black;
   max-width: 40px;
   filter: invert(100%);
+  margin-left: 0px;
 }
 /*////////////////////Main//////////////////////*/
 main {
   margin: 2% 10% 2% 10%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  width: 80vw;
 }
 /*////////////////////BIO//////////////////////*/
 #bio {
   display: flex;
   flex-direction: column;
+  color: #999;
   padding: 0px 30px 30px 30px;
-  background-color: #888;
+  background-color: #111;
+  margin: 40px 0px;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
-  background-image: linear-gradient(to bottom right, #993737, #FFD766);
 }
 #bio img {
   max-width: 150px;
@@ -72,17 +74,18 @@ time {
 /*////////////////////Tech List//////////////////////*/
 #techAndInterest {
   padding: 50px 50px 50px 50px;
+  background-color: #111;
+  color: #999;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
-  background-color: red;
-  background-image: linear-gradient(to bottom right, #993737, #FFD766);
 }
 #tech {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #tech img {
   max-width: 180px;
@@ -93,7 +96,7 @@ figure {
   flex-direction: column;
   max-width: 180px;
   max-height: 180px;
-  margin: 0px;
+  margin: 20px;
   padding: 0px 20px 20px 0px;
 }
 figcaption {
@@ -144,27 +147,4 @@ footer p {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-/*///////////////////Mobile////////////////////*/
-@media only screen and (max-width:1000px) {
-  /* For mobile phones: */
-  main {
-    flex-direction: column;
-    margin: 2% 10% 2% 10%;
-  }
-  header {
-    text-align: center;
-  }
-  header img {
-    margin-left: 0px;
-  }
-  #bio {
-    margin: 40px 0px;
-  }
-  #tech {
-    flex-wrap: wrap;
-  }
-  figure {
-    margin: 20px;
-  }
 }
